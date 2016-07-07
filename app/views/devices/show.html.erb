@@ -1,0 +1,10 @@
+<div class ="main">
+  <h1>Devices</h1>
+  <% @devices.each do |d| %>
+    <p><%= d.name %></p>
+    <p><%= d.model %></p>
+    <p><%= d.location.building_name %></p>
+    <p><%= d.serial_number %></p>
+    <p><%= d.stack_role %></p>
+  <% end %>
+</div>
